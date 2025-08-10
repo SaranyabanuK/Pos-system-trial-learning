@@ -1,0 +1,23 @@
+/* App.css */
+
+@media print {
+  body * {
+    visibility: hidden; /* Hide everything */
+  }
+  #receipt-print-area, #receipt-print-area * {
+    visibility: visible; /* Only show receipt */
+  }
+  #receipt-print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  /* Hide buttons during print */
+  #receipt-print-area button {
+    display: none;
+  }
+}
